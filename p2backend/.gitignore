@@ -33,4 +33,4 @@ build/
 .vscode/
 
 ### individual credentials
-application.properties
+src/main/resources/application.properties
