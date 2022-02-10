@@ -31,3 +31,6 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### individual credentials
+application.properties
