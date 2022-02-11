@@ -1,6 +1,6 @@
 package com.revature.services;
 
-import com.revature.driver.models.Item;
+import com.revature.models.Item;
 
 import java.util.List;
 

@@ -1,5 +1,5 @@
 package com.revature.services;
-import com.revature.driver.models.CartHistory;
+import com.revature.models.CartHistory;
 
 import java.util.List;
 

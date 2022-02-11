@@ -1,6 +1,6 @@
 package com.revature.services;
 
-import com.revature.driver.models.Item;
+import com.revature.models.Item;
 import com.revature.repositories.ItemRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 

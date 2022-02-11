@@ -1,6 +1,6 @@
 package com.revature.controllers;
 
-import com.revature.driver.models.User;
+import com.revature.models.User;
 import com.revature.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

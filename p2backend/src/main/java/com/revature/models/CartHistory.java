@@ -1,4 +1,4 @@
-package com.revature.driver.models;
+package com.revature.models;
 /*
 cart_history_id(serial)(pk)
 user_id(int)(fk)

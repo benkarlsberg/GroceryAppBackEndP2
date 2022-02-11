@@ -1,6 +1,6 @@
 package com.revature.services;
 
-import com.revature.driver.models.CartHistory;
+import com.revature.models.CartHistory;
 import com.revature.repositories.CartHistoryRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 

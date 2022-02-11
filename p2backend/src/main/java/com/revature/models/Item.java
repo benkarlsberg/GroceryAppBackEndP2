@@ -1,4 +1,4 @@
-package com.revature.driver.models;
+package com.revature.models;
 /*
 item_id(serial)(pk)
 item_name(varchar)

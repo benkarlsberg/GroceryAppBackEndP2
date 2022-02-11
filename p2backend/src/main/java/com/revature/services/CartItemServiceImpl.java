@@ -1,6 +1,6 @@
 package com.revature.services;
 
-import com.revature.driver.models.CartItem;
+import com.revature.models.CartItem;
 import com.revature.repositories.CartItemRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 

@@ -1,4 +1,4 @@
-package com.revature.driver.models;
+package com.revature.models;
 /*
     We are going to have use JPA's annotations to tell Spring what to
     with this Class and how to map it to our Database. It is an abstraction of Hibernate (ORM)

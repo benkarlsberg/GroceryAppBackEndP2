@@ -1,6 +1,6 @@
 package com.revature.services;
 
-import com.revature.driver.models.User;
+import com.revature.models.User;
 import com.revature.repositories.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
