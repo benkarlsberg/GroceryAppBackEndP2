@@ -25,6 +25,7 @@ public class CartItem {
     @JoinColumn(name = "cart_history_id")
     private CartHistory cartHistory;
 
+
     @Column(name = "quantity")
     private int quantity;
 }
