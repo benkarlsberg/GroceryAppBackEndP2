@@ -25,5 +25,4 @@ public class Item {
     private double price;
     @Column(name = "item_description")
     private String item_description;
-
 }
