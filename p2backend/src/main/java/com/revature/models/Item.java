@@ -1,10 +1,10 @@
 package com.revature.models;
 /*
-shopping_cart_id(serial)(pk)
-user_id(int)(fk)
-date(date)(can be null) - Date is null if order not completed
+item_id(serial)(pk)
+item_name(varchar)
+price(decimal)
+item_description(varchar)
  */
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,17 +14,16 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity //Marks this Class as having representation in the Database (Has a Table)
-public class ShoppingCart {
-
+public class Item {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "shopping_cart_id", updatable = false)
+    @Column(name = "item_id", updatable = false)
     private int id;
+    @Column(name = "item_name")
+    private String item_name;
+    @Column(name = "price")
+    private double price;
+    @Column(name = "item_description")
+    private String item_description;
 
-    @ManyToOne
-    @JoinColumn(name = "user_id")
-    private User user;
-
-    @Column(name = "date")
-    private long date;
 }
