@@ -1,4 +1,4 @@
-package com.revature.p2backend;
+package com.revature;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
