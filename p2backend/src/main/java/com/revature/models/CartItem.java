@@ -22,6 +22,10 @@ public class CartItem {
     private int id;
 
     @ManyToMany
+    @JoinColumn(name = "item_id")
+    private Item item;
+
+    @ManyToMany
     @JoinColumn(name = "shopping_cart_id")
     private ShoppingCart shoppingCart;
 
