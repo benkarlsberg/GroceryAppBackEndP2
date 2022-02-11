@@ -1,6 +1,6 @@
 package com.revature.services;
 
-import com.revature.models.User;
+import com.revature.driver.models.User;
 
 import java.util.List;
 

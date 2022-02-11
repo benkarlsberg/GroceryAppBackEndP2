@@ -1,4 +1,4 @@
-package com.revature.models;
+package com.revature.driver.models;
 /*
 cart_history_id(serial)(pk)
 user_id(int)(fk)
@@ -9,8 +9,11 @@ date(date)(can be null) - Date is null if order not completed
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.stereotype.Component;
+
 import javax.persistence.*;
 
+@Component
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

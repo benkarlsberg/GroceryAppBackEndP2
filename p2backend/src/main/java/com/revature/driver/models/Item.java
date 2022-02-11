@@ -1,4 +1,4 @@
-package com.revature.models;
+package com.revature.driver.models;
 /*
 item_id(serial)(pk)
 item_name(varchar)
@@ -8,8 +8,12 @@ item_description(varchar)
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.stereotype.Component;
+
 import javax.persistence.*;
 
+
+@Component
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

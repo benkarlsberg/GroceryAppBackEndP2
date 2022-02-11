@@ -1,6 +1,6 @@
 package com.revature.repositories;
 
-import com.revature.models.User;
+import com.revature.driver.models.User;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,6 +1,6 @@
 package com.revature.controllers;
 
-import com.revature.models.Item;
+import com.revature.driver.models.Item;
 import com.revature.services.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,6 +1,6 @@
 package com.revature.services;
 
-import com.revature.models.CartItem;
+import com.revature.driver.models.CartItem;
 
 import java.util.List;
 

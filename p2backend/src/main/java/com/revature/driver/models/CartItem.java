@@ -1,4 +1,4 @@
-package com.revature.models;
+package com.revature.driver.models;
 /*
 cart_item_id(serial)(pk)
 item_id(int)(fk)
@@ -9,9 +9,11 @@ quantity(int)(default 0)
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import javax.persistence.*;
-import java.util.List;
+import org.springframework.stereotype.Component;
 
+import javax.persistence.*;
+
+@Component
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
