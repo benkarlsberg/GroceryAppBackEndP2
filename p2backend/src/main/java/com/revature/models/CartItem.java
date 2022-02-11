@@ -2,7 +2,7 @@ package com.revature.models;
 /*
 cart_item_id(serial)(pk)
 item_id(int)(fk)
-shopping_cart_id(int)(fk)
+cart_history_id(int)(fk)
 quantity(int)(default 0)
  */
 
@@ -21,13 +21,9 @@ public class CartItem {
     @Column(name = "cart_item_id", updatable = false)
     private int id;
 
-    @ManyToMany
-    @JoinColumn(name = "item_id")
-    private Item item;
-
-    @ManyToMany
-    @JoinColumn(name = "shopping_cart_id")
-    private ShoppingCart shoppingCart;
+    @ManyToOne //many cart items in one cart history
+    @JoinColumn(name = "cart_history_id")
+    private CartHistory cartHistory;
 
     @Column(name = "quantity")
     private int quantity;

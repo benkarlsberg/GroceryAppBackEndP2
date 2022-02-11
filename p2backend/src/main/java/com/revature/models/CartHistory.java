@@ -1,6 +1,6 @@
 package com.revature.models;
 /*
-shopping_cart_id(serial)(pk)
+cart_history_id(serial)(pk)
 user_id(int)(fk)
 date(date)(can be null) - Date is null if order not completed
  */
@@ -14,11 +14,11 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity //Marks this Class as having representation in the Database (Has a Table)
-public class ShoppingCart {
+public class CartHistory {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "shopping_cart_id", updatable = false)
+    @Column(name = "cart_history_id", updatable = false)
     private int id;
 
     @ManyToOne
