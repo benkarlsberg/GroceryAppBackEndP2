@@ -9,13 +9,17 @@ quantity(int)(default 0)
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.stereotype.Component;
+
 import javax.persistence.*;
 import java.util.List;
 
+@Component
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity //Marks this Class as having representation in the Database (Has a Table)
+@Table(name="cart_item")
 public class CartItem {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
