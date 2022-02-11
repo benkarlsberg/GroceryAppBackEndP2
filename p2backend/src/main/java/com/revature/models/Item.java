@@ -26,4 +26,8 @@ public class Item {
     @Column(name = "item_description")
     private String item_description;
 
+    @ManyToMany
+    @JoinColumn(name = "cart_item_id")
+    private CartItem cartItem;
+
 }

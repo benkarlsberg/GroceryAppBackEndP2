@@ -21,7 +21,7 @@ public class CartItem {
     @Column(name = "cart_item_id", updatable = false)
     private int id;
 
-    @ManyToOne
+    @ManyToMany
     @JoinColumn(name = "shopping_cart_id")
     private ShoppingCart shoppingCart;
 
