@@ -10,6 +10,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import javax.persistence.*;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -21,10 +22,13 @@ public class CartItem {
     @Column(name = "cart_item_id", updatable = false)
     private int id;
 
-    @ManyToOne //many cart items in one cart history
+    @OneToOne //One cart item can have one item
+    @JoinColumn(name = "item_id")
+    private Item item;
+
+    @ManyToOne //many cart items to one cart history
     @JoinColumn(name = "cart_history_id")
     private CartHistory cartHistory;
-
 
     @Column(name = "quantity")
     private int quantity;

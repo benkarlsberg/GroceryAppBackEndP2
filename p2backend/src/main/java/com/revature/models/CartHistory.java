@@ -22,13 +22,9 @@ public class CartHistory {
     @Column(name = "cart_history_id", updatable = false) //PK
     private int id;
 
-    @ManyToOne  //creates fk in user table
+    @ManyToOne  //Many cart histories to one user
     @JoinColumn(name = "user_id")
     private User user;
-
-    @ManyToOne  //FK calls upon itself
-    @JoinColumn(name = "cart_history_id")
-    private CartItem CartHistoryId;
 
     @Column(name = "date")
     private long date;
