@@ -7,12 +7,16 @@ package com.revature.models;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.stereotype.Component;
+
 import javax.persistence.*;
 
+@Component
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity //Marks this Class as having representation in the Database (Has a Table)
+@Table(name="customer")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
