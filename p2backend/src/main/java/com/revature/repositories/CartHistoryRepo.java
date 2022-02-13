@@ -10,7 +10,7 @@ import java.util.List;
 @Repository
 public interface CartHistoryRepo extends CrudRepository<CartHistory, Integer> {
      @Query(value = "SELECT * FROM cart_history WHERE cart_history_id=? AND date!=null;", nativeQuery = true)
-     List<CartHistory> getOrderHistory(int id);
+     List<CartHistory> getAllCartHistory(int id);
 
      @Query(value = "SELECT * FROM cart_history WHERE cart_history_id=? AND date=null;", nativeQuery = true)
      CartHistory getCurrentCart(int id);

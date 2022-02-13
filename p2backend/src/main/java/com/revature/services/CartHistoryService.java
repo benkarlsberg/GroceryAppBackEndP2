@@ -6,6 +6,6 @@ import java.util.Optional;
 
 public interface CartHistoryService {
     public List<CartHistory> getAllCartHistory();
-    public List <CartHistory> getOrderHistory(int userId);
+    public List <CartHistory> getAllCartHistory(int userId);
     public CartHistory getCurrentCart(int userId);
 }

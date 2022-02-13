@@ -20,8 +20,8 @@ public class CartHistoryServiceImpl implements CartHistoryService{
     }
 
     @Override
-    public List <CartHistory> getOrderHistory(int userId) {
-        return chr.getOrderHistory(userId);
+    public List <CartHistory> getAllCartHistory(int userId) {
+        return chr.getAllCartHistory(userId);
     }
 
     @Override
