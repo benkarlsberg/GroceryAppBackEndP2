@@ -24,5 +24,8 @@ public class CartHistoryServiceImpl implements CartHistoryService{
         return chr.getOrderHistory(userId);
     }
 
-
+    @Override
+    public CartHistory getCurrentCart(int userId){
+        return chr.getCurrentCart(userId);
+    }
 }
