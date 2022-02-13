@@ -22,4 +22,9 @@ public class CartItemServiceImpl implements CartItemService{
     public List<CartItem> getPurchasedCartItems(int userId) {
         return cir.getPurchasedCartItems(userId);
     }
+
+    @Override
+    public List<CartItem> getAllCartItemsByCartHistoryId(int cartHistoryId) {
+        return (List<CartItem>) cir.findAllByCarthistory(cartHistoryId);
+    }
 }
