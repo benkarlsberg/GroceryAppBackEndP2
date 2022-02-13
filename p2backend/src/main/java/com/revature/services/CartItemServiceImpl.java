@@ -12,8 +12,14 @@ import java.util.List;
 public class CartItemServiceImpl implements CartItemService{
     @Autowired
     CartItemRepo cir;
+
     @Override
     public List<CartItem> getAllCartItems() {
         return (List<CartItem>) cir.findAll();
+    }
+
+    @Override
+    public List<CartItem> getPurchasedCartItems(int userId) {
+        return cir.getPurchasedCartItems(userId);
     }
 }
