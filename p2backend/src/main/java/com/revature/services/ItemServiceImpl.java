@@ -11,8 +11,14 @@ import java.util.List;
 public class ItemServiceImpl implements ItemService{
     @Autowired
     ItemRepo ir;
+
     @Override
     public List<Item> getAllItems() {
         return (List<Item>) ir.findAll();
+    }
+
+    @Override
+    public List<Item> searchForItems(String pattern) {
+        return ir.searchForItems(pattern);
     }
 }

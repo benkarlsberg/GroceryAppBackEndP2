@@ -25,6 +25,6 @@ public class CartItemServiceImpl implements CartItemService{
 
     @Override
     public List<CartItem> getAllCartItemsByCartHistoryId(int cartHistoryId) {
-        return (List<CartItem>) cir.findAllByCarthistory(cartHistoryId);
+        return cir.findAllByCarthistory(cartHistoryId);
     }
 }
