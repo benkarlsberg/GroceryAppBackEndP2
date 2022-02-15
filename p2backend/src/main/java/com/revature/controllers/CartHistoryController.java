@@ -26,7 +26,7 @@ public class CartHistoryController {
         return chs.getAllCartHistory(Integer.parseInt("userId"));
     }
 
-    @GetMapping("/carthistory/{userId}")
+    @GetMapping("/carthistory/current/{userId}")
     public CartHistory getCurrentCart(@PathVariable("userId") String userId) {
         return chs.getCurrentCart(Integer.parseInt(userId));
     }
