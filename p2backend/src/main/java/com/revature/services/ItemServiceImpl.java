@@ -3,6 +3,7 @@ package com.revature.services;
 import com.revature.models.Item;
 import com.revature.repositories.ItemRepo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -26,5 +27,26 @@ public class ItemServiceImpl implements ItemService{
     @Override
     public List<Item> searchForItems(String pattern) {
         return ir.searchForItems(pattern);
+    }
+
+    @Override
+    public Item addItem(Item item) {
+        return ir.save(item);
+    }
+
+    @Override
+    public Item updateItem(Item item) {
+        return ir.save(item);
+    }
+
+    @Override
+    public boolean deleteItem(int id) {
+        try {
+            ir.deleteById(id);
+            return true;
+        } catch (IllegalArgumentException | EmptyResultDataAccessException e) {
+            e.printStackTrace();
+            return false;
+        }
     }
 }

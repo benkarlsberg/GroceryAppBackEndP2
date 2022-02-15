@@ -26,19 +26,19 @@ public class UserController {
     }
 
     @PostMapping(value = "/users", consumes = "application/json", produces = "application/json")
-    public User addMovie(@RequestBody User user) {
+    public User addUser(@RequestBody User user) {
         return us.addUser(user);
     }
 
     @PutMapping(value="/users/{id}", consumes = "application/json", produces = "application/json")
-    public User updateMovie(@PathVariable("id") String id, @RequestBody User user) {
+    public User updateUser(@PathVariable("id") String id, @RequestBody User user) {
 
         user.setId(Integer.parseInt(id));
         return us.updateUser(user);
     }
 
     @DeleteMapping("users/{id}")
-    public ResponseEntity<User> deleteMovie(@PathVariable("id") String id) {
+    public ResponseEntity<User> deleteUser(@PathVariable("id") String id) {
         boolean success = us.deleteUser(Integer.parseInt(id));
         return new ResponseEntity<>((success) ? HttpStatus.NO_CONTENT : HttpStatus.NOT_FOUND);
     }
