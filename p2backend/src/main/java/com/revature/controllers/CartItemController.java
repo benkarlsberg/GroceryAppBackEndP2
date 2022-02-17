@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
+@CrossOrigin
 @RestController
 public class CartItemController {
 
@@ -22,7 +23,7 @@ public class CartItemController {
         return cis.getAllCartItems();
     }
 
-    @GetMapping("/cartitem/{userId}")
+    @GetMapping("/cartitem/purchasehistory/{userId}")
     public List<CartItem> getPurchasedCartItems(@PathVariable("userId") String userId) {
         return cis.getPurchasedCartItems(Integer.parseInt(userId));
     }

@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin
 @RestController
 public class UserController {
 
@@ -20,9 +21,9 @@ public class UserController {
         return us.getAllUsers();
     }
 
-    @GetMapping("/users/search")
-    public List<User> searchUser(@RequestParam String user) {
-        return us.getUserByUsername(user);
+    @GetMapping("/users/{username}")
+    public User searchUser(@PathVariable("username") String username) {
+        return us.getUserByUsername(username);
     }
 
     @PostMapping(value = "/users", consumes = "application/json", produces = "application/json")
