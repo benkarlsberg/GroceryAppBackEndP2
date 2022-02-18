@@ -1,7 +1,6 @@
 package com.revature.controllers;
 
 import com.revature.models.CartHistory;
-import com.revature.models.CartHistory;
 import com.revature.services.CartHistoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

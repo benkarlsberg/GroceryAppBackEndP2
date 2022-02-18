@@ -1,7 +1,6 @@
 package com.revature.controllers;
 
 import com.revature.models.Item;
-import com.revature.models.User;
 import com.revature.services.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
