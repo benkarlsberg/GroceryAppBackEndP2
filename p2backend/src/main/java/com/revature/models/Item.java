@@ -31,4 +31,6 @@ public class Item {
     private String item_description;
     @Column(name="stock")
     private int stock;
+    @Column(name="img_path")
+    private String img_path;
 }
