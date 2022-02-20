@@ -12,6 +12,7 @@ import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Component
 @Data
@@ -31,5 +32,5 @@ public class CartHistory {
     private User user;
 
     @Column(name = "date")
-    private long date;
+    private String date;
 }

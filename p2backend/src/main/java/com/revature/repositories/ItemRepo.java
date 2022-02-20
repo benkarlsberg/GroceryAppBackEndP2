@@ -9,6 +9,6 @@ import java.util.List;
 
 @Repository
 public interface ItemRepo extends CrudRepository<Item,Integer> {
-    @Query(value = "SELECT * FROM items WHERE item_name ILIKE %?%;", nativeQuery = true)
+    @Query(value = "SELECT * FROM items WHERE item_name iLIKE %?%;", nativeQuery = true)
     List<Item> searchForItems(String pattern);
 }
