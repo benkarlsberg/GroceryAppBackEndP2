@@ -12,6 +12,7 @@ import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Component
 @Data
@@ -23,7 +24,7 @@ public class CartHistory {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "cart_history_id", updatable = false) //PK
+    @Column(name = "cart_history_id") //PK
     private int id;
 
     @ManyToOne  //Many cart histories to one user
@@ -31,5 +32,5 @@ public class CartHistory {
     private User user;
 
     @Column(name = "date")
-    private long date;
+    private String date;
 }
