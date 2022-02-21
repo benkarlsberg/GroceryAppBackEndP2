@@ -28,7 +28,7 @@ public class ItemController {
     }
 
     @GetMapping("/item/search/{pattern}")
-    public List<Item> searchForItems(@PathVariable("pattern") String pattern){
+    public List<Item> searchForItems(@PathVariable String pattern){
         return is.searchForItems(pattern);
     }
 

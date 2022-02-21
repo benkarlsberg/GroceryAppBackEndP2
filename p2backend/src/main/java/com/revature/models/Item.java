@@ -24,7 +24,7 @@ public class Item {
     @Column(name = "item_id", updatable = false)
     private int id;
     @Column(name = "item_name")
-    private String item_name;
+    private String itemName;
     @Column(name = "price")
     private double price;
     @Column(name = "item_description")
