@@ -26,7 +26,7 @@ public class ItemServiceImpl implements ItemService{
 
     @Override
     public List<Item> searchForItems(String pattern) {
-        return ir.searchForItems(pattern);
+        return ir.findByItemNameContainingIgnoreCase(pattern);
     }
 
     @Override
