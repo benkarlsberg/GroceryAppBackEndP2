@@ -44,6 +44,28 @@ endpoints.beans.sensitive=false
 
 ## URI Usage
 
+* Get and Post Requests
+   * `/users`
+   * `/item`
+   * `/cartitem`
+   * `/carthistory`
+
+* Get by ID
+   * `/cartitem/purchasehistory/{userId}` 
+   * `/carthistory/{userId}`
+   * `/carthistory/current/{userId}` (by current userId)
+
+ * Put and Delete Request by ID
+   * `/users/{id}`
+   * `/carthistory/{id}`
+ 
+ * Put and Delete Request by username
+   * `/users/{username}`
+ 
+ * Get, Put and Delete Request by ID
+   * `/item/{id}`
+   * `/cartitem/{id}`
+
 * /users
   * Get and Post request 
 * /users/{id}
@@ -56,7 +78,19 @@ endpoints.beans.sensitive=false
   * Get, Put and Delete by ID
 * /cartitem
   * Get and Post
-   
-
+* /cartitem/{id}
+   * Put and Delete by ID
+* /cartitem/{cartHistoryId}
+   * Get cartHistoryID
+* /cartitem/purchasehistory/{userId}
+  * Get by userId
+* /carthistory
+   * Get and Post
+* /carthistory/{userId}
+  * Get by userId  
+* /carthistory/current/{userId}
+  * Get current cart by userId
+* /carthistory/{id}
+   * Put and Delete by ID 
 
 
