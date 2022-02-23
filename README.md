@@ -67,33 +67,3 @@ endpoints.beans.sensitive=false
    * `/cartitem/{id}`
 
 
-
-
-* /users
-  * Get and Post request 
-* /users/{id}
-  * Put and Delete Request by ID
-* /users/{username}
-  * Put and Delete Request by username
-* /item
-  * Get and Post request
-* /item/{id}
-  * Get, Put and Delete by ID
-* /cartitem
-  * Get and Post
-* /cartitem/{id}
-   * Put and Delete by ID
-* /cartitem/{cartHistoryId}
-   * Get cartHistoryID
-* /cartitem/purchasehistory/{userId}
-  * Get by userId
-* /carthistory
-   * Get and Post
-* /carthistory/{userId}
-  * Get by userId  
-* /carthistory/current/{userId}
-  * Get current cart by userId
-* /carthistory/{id}
-   * Put and Delete by ID 
-
-
