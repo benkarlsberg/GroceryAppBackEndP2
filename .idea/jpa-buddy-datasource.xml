@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JpbDataSourceConfig">
+    <data-sources>
+      <data-source id="9b3a5977-a19b-4ef1-8032-04cf299ba50d" name="GroceryAppBackEndP2" url="jdbc:postgresql://revatureproject0.ced2iylpmgft.us-west-1.rds.amazonaws.com/postgres" driverClass="org.postgresql.Driver" />
+    </data-sources>
+  </component>
+</project>
